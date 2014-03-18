@@ -2,20 +2,35 @@
 <html>
   <head>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./stylesheets/style.css" rel="stylesheet">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="socket.io/socket.io.js" ></script>
     <script src="./javascripts/chat.js" ></script>
+    <script src="./javascripts/chat_ui.js" ></script>
   </head>
   
   <body>
     <div class="container">
       <div class="col-sm-12 col-md-6 col-md-offset-3">
-        <h2>nodeChat!</h2>
+        <h2>nodechat</h2>
         <hr/>
         <div class="messages">
+          <div class="msg alert alert-danger">Welcome to nodeChat! get typing Mr. l33t :)</div>
         </div>
-        <form role="form" class="form" action="#", method="POST">
-          <textarea class="form-control" placeholder="enter your message here"></textarea>
+        <form class="row">
+          
+          <div class="col-sm-12 col-md-4">
+            <input class="handle form-control" placeholder="L33TUser">
+          </div>
+          
+          <div class="col-sm-12 col-md-8">
+            <input class="message-input form-control" placeholder="enter your message here">
+          </div>
+          <hr/>
+          <div class="col-sm-12">
+            <input type="submit" value="Push my message" class="btn btn-danger btn-lg btn-block">
+          </div>
+
         </form>
       </div>  
   </body>

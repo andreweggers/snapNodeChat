@@ -1,0 +1,20 @@
+h2{
+  color:#2c3e50;
+}
+
+
+.btn-block{
+  border:none;
+  margin-top:20px;
+}
+
+.alert-danger{
+  background:#ecf0f1;
+  border:1px #bdc3c7 solid;
+  color:#2c3e50;
+}
+
+.username{
+  color:#8e44ad;
+  padding-right:10px;
+}
