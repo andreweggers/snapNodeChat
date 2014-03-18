@@ -13,4 +13,4 @@ var staticServer = http.createServer(function(request, response) {
 }).listen(8080); 
 
 
-var chat_server = require('./chat_server').createChat(staticServer)
+var socket = require('./lib/chat_server.js').createChat(staticServer)
