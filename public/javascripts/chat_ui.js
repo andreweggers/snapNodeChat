@@ -8,8 +8,8 @@ $(function(){
     e.preventDefault();
 
     currentChat.sendMessage({
-      "handle": $('.handle').val() || "L33T User",
-      "text": $('.message-input').val()
+      "handle": _.escape($('.handle').val() || "L33T User"),
+      "text": _.escape($('.message-input').val())
     });
 
     $('.message-input').val('').focus()
