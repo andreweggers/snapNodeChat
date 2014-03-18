@@ -10,7 +10,7 @@ var staticServer = http.createServer(function(request, response) {
     console.log("received req. from ", request.url);
     file.serve(request, response);
   }).resume();
-}).listen(8080); 
+}).listen(process.env.PORT || 8080); 
 
 
 var socket = require('./lib/chat_server.js').createChat(staticServer)
